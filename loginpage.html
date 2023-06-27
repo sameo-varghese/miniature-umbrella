@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="/loginpage.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid bg-success">
+    <div class="row">
+        <div class="col">
+            <p class="text-white pt-1 ps-2 fw-bold fs-3">
+                <a class="btn btn-dark me-4" href="index.html" role="button">HOME</a>
+                Kerala Tourisim</p>
+        </div>
+    </div>
+</div>
+
+<div class="container body">
+<div class="form-box mt-3 border rounded-5 p-5">
+    <form>
+        <h1 class="fw-normal">Sign UP</h1>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="field1" placeholder="email" onkeyup="return ValidateEmail()">
+        <span id="err1"></span>
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone number</label>
+        <!-- <a class="forgot" href="#">forgot password?</a> -->
+        <input type="tel" class="form-control" id="field3" placeholder="XXX XXX XXXX" onkeyup="return ValidatePhone()">
+        <span id="err3"></span>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <!-- <a class="forgot" href="#">forgot password?</a> -->
+        <input type="password" class="form-control" id="field2" placeholder="Password" onkeyup="return ValidatePassword()">
+        <span id="err2"></span>
+      </div>
+
+  
+
+      
+
+      <button class="btn btn-success rounded-pill w-100 mt-4 fw-bold fs-5">Sign UP</button>
+      <p class="mt-5 ms-4">Already have an account ?
+            <a class="btn btn-outline-success ms-2" href="" role="button" target="_blank">Log in</a>
+      </p>
+      <script src="loginpage.js"></script>
+      </form>
+
+</div>
+<br>
+</div>
+
+</body>
+</html>
